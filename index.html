@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Scale HTML</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+    
+        .container {
+            width: 90%;       /* 90% of screen width */
+            max-width: 1200px; /* Prevent too wide on large screens */
+            margin: auto;
+            background: lightblue;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    
+        img {
+            max-width: 100%; /* Auto-scale images */
+            height: auto;
+        }
+</style>
+</head>
+<style> /*animation*/
+@keyframes fadeInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+}
+@keyframes fadeIn {
+        0% {
+            opacity: 0;
+            
+        }
+        100% {
+            opacity: 1;
+        }
+}
+@keyframes fadeOut {
+        0% {
+            opacity: 1;
+            
+        }
+        100% {
+            opacity: 0;
+        }
+}
+@keyframes fadeIndown {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+}
+</style>
+<body>
+</body>
+<title>W3.CSS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<button class="ubuntu-btn">
+  <i class=""></i>
+</button>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {margin:0}
+.icon-bar {
+  width: 60px;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+  animation: fadeInLeft 1s ease-out forwards;
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+  background-color: rgba(0, 0, 0, 0.2);
+  animation: fadeInLeft 1s ease-out forwards;
+}
+.icon-bar b {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+  height: 560px;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+  animation: fadeinLeft 1s ease-out forwards;
+}
+.active {
+  background-color: #04AA6D;
+}
+</style>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="icon-bar">
+  <a class="fa-solid fa-hard-drive"></a>
+  <a class="fa-brands fa-facebook" href="" target="_blank"></a>
+  <a class="fa-brands fa-fedora" href="https://fedoraproject.org/" target="_blank"></a>
+  <a href="https://www.linuxmint.com/" class="fa-solid fa-m" target="_blank" ></a>
+  <a href="https://zorin.com/os/" class="fa-solid fa-z" target="_blank" ></a>
+  <a href="https://www.kali.org/get-kali/#kali-platforms" class="fa-solid fa-k" target="_blank" ></a>
+  <a href="https://access.redhat.com/downloads" class="fa-brands fa-redhat" target="_blank" ></a>
+  <a href="https://www.debian.org/distrib/" class="fa-brands fa-debian" target="_blank" ></a>
+  <a href="https://cachyos.org/" class="fa-solid fa-c" target="_blank" ></a>
+  <a class="fa-brands fa-p" href="https://system76.com/pop/"  target="_blank"></a>
+  <a class="fa-solid fa-gear" href="https://kubuntu.org/download/"  target="_blank"></a>
+  <a class="fa-solid fa-l" href="https://lubuntu.me/downloads/"  target="_blank"></a>
+  <a class="fa-brands fa-linux" href="https://www.linux.org/pages/download/"  target="_blank"></a>
+  <a class="fa-solid fa-trash"></a>
+</div>
+<style>
+.ubuntu-btn {
+    background-color: #fafafa00; /* Ubuntu orange */
+    color: white;
+    border: none;
+    max-width: 16px 16px; /* Auto-scale images */
+    height: 30px;
+    font-size: 20px;
+    border-radius: 6px;
+    display: inline-flex;
+    text-align: left;
+    gap: 8px;
+  }
+  .ubuntu-btn i {
+    font-size: 18px;
+    }
+.btn {
+  background-color #E95420;
+  color: white;
+  border: none;
+  max-width: auto; /* Auto-scale images */
+  height: auto;
+  font-size: 20px;
+  border-radius: 6px;
+  display: inline-flex;
+  text-align: left;
+  gap: 8px;
+}
+</style>
+</head>
+<head>
+<style>
+datetime { /*top bar workspace*/
+  position: absolute;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10.5px;
+  color: white;
+  font-size: 36px;
+  height: 16px;
+  width: 700px;
+  margin: 0;
+  left: 550px;
+  bottom: 930px;
+  animation: fadeIndown 1s ease-out forwards;
+  border-radius: 10px;
+}
+</style>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</script>
+<body>
+  <datetime class="" </datetime></datetime>
+</body>
+<head>
+<style> 
+body { /*background web*/
+  background-image: url("https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_1801/https%3A%2F%2Fassets.ubuntu.com%2Fv1%2F622b4fe1-numpy-numbat-on-dell-xps-13.jpg");
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+n { /* dock ubuntu */
+  position: absolute;
+  display: block;
+  background-color: black;
+  padding: 10.5px;
+  color: white;
+  font-size: 36px;
+  height: 45px;
+  width: 40px;
+  margin: 0;
+  left: -1px;
+  bottom: -66px;
+  background-color: rgba(0, 0, 0, 0.2);
+  animation: fadeInLeft 1s ease-out forwards;
+  border-radius: 5px
+}
+b { /* dock ubuntu */
+  display: block;
+  padding: 10px;
+  color: white;
+  font-size: 36px;
+  height: 50px;
+  width: 40px;
+  margin: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+  animation: fadeInLeft 1s ease-out forwards;
+}
+k { /* preparing ubuntu tab */
+  position: absolute;
+  display: block;
+  background-color: black;
+  padding: 10.5px;
+  color: white;
+  height: 840px;
+  width: 1200px;
+  margin: 0;
+  left: 300px;
+  bottom: 50px;
+  background-color: white;
+  color: black;
+  font-size: 100px;
+  animation: fadeIn 1s ease-out forwards;
+}
+kloading { /* preparing ubuntu tab loading */
+  position: absolute;
+  display: block;
+  background-color: black;
+  padding: 10.5px;
+  color: white;
+  height: 840px;
+  width: 1200px;
+  margin: 0;
+  left: 300px;
+  bottom: 50px;
+  background-color: white;
+  color: black;
+  font-size: 100px;
+  animation: fadeOut 1s ease-out forwards;
+  border-radius: 20px;
+}
+bhop { /* link strafe.io */
+  position: absolute;
+  display: block;
+  background-color: black;
+  padding: 10.5px;
+  color: white;
+  height: 300px;
+  width: 500px;
+  margin: 0;
+  left: 950px;
+  bottom: 440px;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-size: 200px;
+  animation: fadeIn 1s ease-out forwards;
+  border-radius: 20px;
+}
+Linuxorg { /* link linux.org */
+  position: absolute;
+  display: block;
+  background-color: black;
+  padding: 10.5px;
+  color: white;
+  height: 300px;
+  width: 500px;
+  margin: 0;
+  left: 950px;
+  bottom: 80px;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-size: 200px;
+  animation: fadeIn 1s ease-out forwards;
+  border-radius: 20px;
+}
+labelLinuxorg:hover { /* link linux.org hover */
+  position: absolute;
+  display: block;
+  background-color: black;
+  padding: 10.5px;
+  color: white;
+  height: 50px;
+  width: 500px;
+  margin: 0;
+  left: 950px;
+  bottom: 80px;
+  background-color: rgba(0, 0, 0, 1);
+  color: black;
+  font-size: 30px;
+  animation: fadeIn 1s ease-out forwards;
+  border-radius: 20px;
+}
+labellinuxorg { /* link linux.org idle */
+  position: absolute;
+  display: block;
+  background-color: black;
+  padding: 10.5px;
+  color: white;
+  height: 50px;
+  width: 500px;
+  margin: 0;
+  left: 950px;
+  bottom: 80px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  font-size: 30px;
+  animation: fadeIn 1s ease-out forwards;
+  border-radius: 20px;
+}
+labelbhop { /* link strafe.io idle */
+  position: absolute;
+  display: block;
+  background-color: black;
+  padding: 10.5px;
+  color: white;
+  height: 50px;
+  width: 500px;
+  margin: 0;
+  left: 950px;
+  bottom: 440px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  animation: fadeIn 1s ease-out forwards;
+  font-size: 30px;
+  border-radius: 20px;
+}
+labelbhop:hover { /* link strafe.io hover */
+  position: absolute;
+  display: block;
+  background-color: black;
+  padding: 10.5px;
+  color: white; 
+  height: 50px;
+  width: 500px;
+  margin: 0;
+  left: 950px;
+  bottom: 440px;
+  background-color: rgba(0, 0, 0, 1);
+  color: black;
+  animation: fadeIn 1s ease-out forwards;
+  font-size: 30px;
+  border-radius: 20px;
+}
+headpreparingubuntu { /* head ubuntu */
+  position: absolute;
+  display: block;
+  padding: 10.5px;
+  color: white;
+  height: 80px;
+  width: 1050px;
+  margin: 0;
+  left: 350px;
+  bottom: 800px;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  animation: fadeIn 1s ease-out forwards;
+  font-size: 50px;
+  border-radius: 20px;
+}
+iconpreparing {
+  position: absolute;
+  display: block;
+  padding: 10.5px;
+  color: white;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  left: 350px;
+  bottom: 390px;
+  background-color: rgb(255, 81, 0);
+  color: white;
+  animation: fadeIn 1s ease-out forwards;
+  font-size: 50px;
+  text-align: bottom;
+}
+iconpreparingup {
+  position: absolute;
+  display: block;
+  padding: 10.5px;
+  color: white;
+  height: 20px;
+  width: 50px;
+  margin: 0;
+  left: 350px;
+  bottom: 450px;
+  background-color: rgb(255, 81, 0);
+  animation: fadeIn 1s ease-out forwards;
+  font-size: 50px;
+}
+labelubuntupreparing {
+  position: absolute;
+  display: block;
+  padding: 10.5px;
+  color: white;
+  height: 50px;
+  width: 500px;
+  margin: 0;
+  left: 410px;
+  bottom: 390px;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  animation: fadeIn 1s ease-out forwards;
+  font-size: 50px;
+  border-radius: 20px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+  <k class=""</k></k>
+  <linuxorg class="fa-solid fa-compact-disc"</linuxorg></linuxorg>
+  <bhop class="fa-solid fa-person-running" </bhop></bhop>
+  <labelbhop><a class="" href="https://strafes.io/" target="_blank" >Play Strafe.io</a></labelbhop></labelbhop>
+  <labellinuxorg><a class="" href="https://www.linux.org/pages/download/" target="_blank" >Visit linux.org pick distro</a></labellinuxorg></labellinuxorg>
+  <headpreparingubuntu class="">Choose</headpreparingubuntu></headpreparingubuntu></headpreparingubuntu>
+  <iconpreparingup class="" ></iconpreparingup></iconpreparingup></iconpreparingup>
+  <iconpreparing class="fa-brands fa-ubuntu"></iconpreparing></iconpreparing>
+  <labelubuntupreparing class="">Ubuntumaxwellcat</labelubuntupreparing>
+  <b class=""</b>
+  <n class="fa-brands fa-ubuntu"</n>
+</html>
